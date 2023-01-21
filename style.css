@@ -1,0 +1,555 @@
+body {
+    background-color: #efefef;
+    font-family: "Roboto", sans-serif;
+    color: #212121;
+}
+
+.container {
+    position: relative;
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.btn1 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    left: 0px;
+    transition-duration: 0.5s;
+}
+
+.btn1 .icon-left {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 8px;
+    width: 30px;
+    top: 30px;
+    background-color: #212121;
+    left: 0px;
+}
+
+.btn1 .icon-left:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 30px;
+    height: 8px;
+    background-color: #212121;
+    content: "";
+    top: -20px;
+}
+
+.btn1 .icon-left:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 30px;
+    height: 8px;
+    background-color: #212121;
+    content: "";
+    top: 20px;
+}
+
+.btn1 .icon-left:hover {
+    cursor: pointer;
+}
+
+.btn1 .icon-right {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 8px;
+    width: 30px;
+    top: 30px;
+    background-color: #212121;
+    left: 30px;
+}
+
+.btn1 .icon-right:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 30px;
+    height: 8px;
+    background-color: #212121;
+    content: "";
+    top: -20px;
+}
+
+.btn1 .icon-right:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 30px;
+    height: 8px;
+    background-color: #212121;
+    content: "";
+    top: 20px;
+}
+
+.btn1.open .icon-left {
+    transition-duration: 0.5s;
+    background: transparent;
+}
+
+.btn1.open .icon-left:before {
+    transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+}
+
+.btn1.open .icon-left:after {
+    transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+}
+
+.btn1.open .icon-right {
+    transition-duration: 0.5s;
+    background: transparent;
+}
+
+.btn1.open .icon-right:before {
+    transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+}
+
+.btn1.open .icon-right:after {
+    transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+}
+
+.btn1:hover {
+    cursor: pointer;
+}
+
+.btn2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    left: 120px;
+    transition-duration: 0.5s;
+}
+
+.btn2 .icon {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 8px;
+    width: 60px;
+    top: 30px;
+    background-color: #212121;
+}
+
+.btn2 .icon:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    background-color: #212121;
+    content: "";
+    top: -20px;
+}
+
+.btn2 .icon:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    background-color: #212121;
+    content: "";
+    top: 20px;
+}
+
+.btn2.open .icon {
+    transition-duration: 0.5s;
+    background: transparent;
+}
+
+.btn2.open .icon:before {
+    transform: rotateZ(45deg) scaleX(1.25) translate(13px, 13px);
+}
+
+.btn2.open .icon:after {
+    transform: rotateZ(-45deg) scaleX(1.25) translate(12px, -12px);
+}
+
+.btn2:hover {
+    cursor: pointer;
+}
+
+.btn3 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    left: 240px;
+    transition-duration: 0.5s;
+}
+
+.btn3 .icon {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 0px;
+    width: 60px;
+    top: 30px;
+    background-color: #212121;
+}
+
+.btn3 .icon:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    background-color: #212121;
+    content: "";
+    top: -20px;
+}
+
+.btn3 .icon:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    background-color: #212121;
+    content: "";
+    top: 20px;
+}
+
+.btn3.open .icon {
+    transition-duration: 0.5s;
+}
+
+.btn3.open .icon:before {
+    transform: rotateZ(135deg) scaleX(1.25) translate(13px, -13px);
+}
+
+.btn3.open .icon:after {
+    transform: rotateZ(-135deg) scaleX(1.25) translate(12px, 12px);
+}
+
+.btn3:hover {
+    cursor: pointer;
+}
+
+.btn4 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    left: 360px;
+    transition-duration: 0.5s;
+}
+
+.btn4 .icon {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 0px;
+    width: 60px;
+    top: 30px;
+    background-color: #212121;
+}
+
+.btn4 .icon:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    background-color: #212121;
+    content: "";
+    top: -20px;
+}
+
+.btn4 .icon:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    background-color: #212121;
+    content: "";
+    top: 20px;
+}
+
+.btn4.open .icon {
+    transition: 0.5s;
+}
+
+.btn4.open .icon:before {
+    transform: rotateZ(45deg) scaleX(1.25) translate(12px, 12px);
+}
+
+.btn4.open .icon:after {
+    transform: rotateZ(-45deg) scaleX(1.25) translate(12px, -12px);
+}
+
+.btn4:hover {
+    cursor: pointer;
+}
+
+.btn5 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 200px;
+    left: 0px;
+    transition-duration: 0.5s;
+}
+
+.btn5 .icon {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 8px;
+    width: 60px;
+    top: 30px;
+    background-color: #212121;
+}
+
+.btn5 .icon:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    background-color: #212121;
+    content: "";
+    top: -20px;
+}
+
+.btn5 .icon:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    background-color: #212121;
+    content: "";
+    top: 20px;
+}
+
+.btn5.open .icon {
+    transition: 0.5s;
+}
+
+.btn5.open .icon:before {
+    transform: rotateZ(-45deg) scaleX(0.75) translate(-20px, -6px);
+}
+
+.btn5.open .icon:after {
+    transform: rotateZ(45deg) scaleX(0.75) translate(-20px, 6px);
+}
+
+.btn5:hover {
+    cursor: pointer;
+}
+
+.btn14 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 400px;
+    left: 15px;
+    transition-duration: 0.5s;
+}
+
+.btn14 .icon-circle {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 2px;
+    border-radius: 100%;
+    background: transparent;
+    border: 4px solid black;
+    left: -15px;
+}
+
+.btn14 .icon-circle:hover {
+    background: #fff;
+}
+
+.btn14 .icon {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    top: 30px;
+    background-color: #212121;
+    border-radius: 4px;
+}
+
+.btn14 .icon:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: #212121;
+    content: "";
+    top: -10px;
+    border-radius: 4px;
+}
+
+.btn14 .icon:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: #212121;
+    content: "";
+    top: 10px;
+    border-radius: 4px;
+}
+
+.btn14.open .icon-circle {
+    background: #fff;
+}
+
+.btn14.open .icon {
+    transition-duration: 0.5s;
+    background: transparent;
+}
+
+.btn14.open .icon:before {
+    transform: rotateZ(45deg) scaleX(1.25) translate(6.5px, 6.5px);
+}
+
+.btn14.open .icon:after {
+    transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
+}
+
+.btn14:hover {
+    cursor: pointer;
+}
+
+
+
+.sec-blue {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 140, 255, .5);
+    height: 800px;
+}
+
+.sec-yellow {
+    display: flex;
+    align-items: center;
+    background-color: rgba(244, 244, 11);
+    height: 800px;
+}
+
+.sec-green {
+    display: flex;
+    align-items: center;
+    background-color: rgb(129, 243, 129, .5);
+    height: 800px;
+}
+
+/* ボタン */
+.btn {
+    width: 200px;
+    margin-left: 20px;
+}
+
+.btn__link {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.btn__text {
+    display: block;
+    padding: 7px 5px;
+}
+
+/* モーダル */
+.modal-back {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /*　ここを追記　*/
+    visibility: hidden;
+}
+
+.modal {
+    background-color: #fff;
+    padding: 30px 50px;
+    border-radius: 10px;
+    border: 4px solid rgb(89, 165, 246);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.modal001 {
+    background-color: rgb(202, 215, 242);
+    transition: opacity .3s;
+    opacity: 0;
+    /*　ここを追記　*/
+    visibility: hidden;
+}
+
+.modal002 {
+    background-color: rgb(244, 244, 160);
+    transition: opacity .3s;
+    opacity: 0;
+    /*　ここを追記　*/
+    visibility: hidden;
+}
+
+.modal003 {
+    background-color: rgb(145, 247, 145);
+    transition: opacity .3s;
+    opacity: 0;
+    /*　ここを追記　*/
+    visibility: hidden;
+}
+
+/* クローズボタン */
+.close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    cursor: pointer;
+}
+
+.close__line {
+    width: 4px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.close__line001 {
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+.close__line002 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+
+.modal-back.open {
+    opacity: 1;
+    visibility: inherit;
+}
+
+.modal001.open {
+    opacity: 1;
+    visibility: inherit;
+}
+
+.modal002.open {
+    opacity: 1;
+    visibility: inherit;
+}
+
+.modal003.open {
+    opacity: 1;
+    visibility: inherit;
+}
